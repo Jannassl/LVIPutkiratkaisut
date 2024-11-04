@@ -10,6 +10,7 @@ body{
     height: 100px;
     z-index: 1000;
 }
+
 .navBarHeader{
     background:#0075A8;
     display: flex;
