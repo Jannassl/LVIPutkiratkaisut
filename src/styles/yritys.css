@@ -1,0 +1,35 @@
+
+.karuselliImageContainer {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.karuselliImageContainer img {
+    flex: 1 1 100%;
+    width: 100%;
+    height: auto;
+    filter: brightness(0.5);
+}
+.overlayElement {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    font-size:30px;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+.yritysMainContent{
+    width: 70%;
+    text-align: center;
+    font-size: 20px;
+}
+.yritysMainContent p{
+    margin-bottom: 4rem;
+}
