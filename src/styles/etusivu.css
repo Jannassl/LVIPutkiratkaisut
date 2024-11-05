@@ -84,6 +84,7 @@ nav button {
     background: none;
     border: none;
     font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
     position: relative;
     overflow: hidden;
     cursor: pointer;
@@ -162,7 +163,7 @@ nav button:hover::after {
 }
 .firmaInfo p {
     line-height: 1.6;
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 40px;
 }
 .palvelutContainer {
@@ -186,8 +187,9 @@ nav button:hover::after {
 .palveluKortti:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
-.korttiHeader a{
+.korttiHeader h3{
     text-decoration: none;
     color: #0075A8;
     font-size: 20px;
@@ -269,8 +271,8 @@ nav button:hover::after {
     }
 }
 
+@media (max-width: 1200px) {
 
-@media (max-width: 768px) {
     .navBarHeader {
         height: auto;
         padding: 20px 0;

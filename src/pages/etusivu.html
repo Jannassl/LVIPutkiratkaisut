@@ -4,6 +4,7 @@
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LVIPutkiratkaisut</title>
     <link rel="stylesheet" href="../styles/etusivu.css">
+    <link rel="stylesheet" href="../styles/yritys.css">
     <script src="../js/buttons.js" defer></script>
 </head>
 <body>
@@ -31,7 +32,7 @@
                 <div class="dropdown-container">
                     <button id="palvelutBtn">Palvelut</button>
                     <div class="dropdown">
-                        <a href="#Huoltotyöt">Huoltotyöt</a>
+                        <a href="huoltotyot.html">Huoltotyöt</a>
                         <a href="#Urakointi">Urakointi</a>
                         <a href="#Tarvikemyynti">Tarvikemyynti</a>
                         <a href="#Kuivauspalvelut">Kuivauspalvelut</a>
@@ -47,9 +48,9 @@
                 <div class="bar"></div>
             </div>
             <div class="hamburgerDropdown" id="hamburgerDropdownMenu">
-                <a href="#etusivuBtn">Etusivu</a>
-                <a href="#yritysBtn">Yritys</a>
-                <a href="#Huoltotyöt">Huoltotyöt</a>
+                <a href="etusivu.html">Etusivu</a>
+                <a href="yritys.html">Yritys</a>
+                <a href="huoltotyot.html">Huoltotyöt</a>
                 <a href="#Urakointi">Urakointi</a>
                 <a href="#Tarvikemyynti">Tarvikemyynti</a>
                 <a href="#Kuivauspalvelut">Kuivauspalvelut</a>
@@ -64,6 +65,9 @@
 <section class="karuselliContainer">
     <div class="karuselliImageContainer">
         <img src="../resources/putkariKuva1.jpg" alt="putkimies">
+        <div class="overlayElement">
+            <h1>Putkiratkaisut, joihin voit luottaa</h1>
+        </div>
     </div>
 </section>
 
@@ -87,14 +91,12 @@
 </section>
 
 <section class="palvelutContainer">
-    <div class="palveluKortti">
+    <div class="palveluKortti" id="huoltoKortti">
         <div class="korttiIcon">
             <img src="../resources/LV_huoltotyot.png" alt="Huoltotyöt">
         </div>
         <div class="korttiHeader">
-            <a href="">
-                <h3>Huoltotyöt</h3>
-            </a>
+            <h3>Huoltotyöt</h3>
         </div>
         <div class="korttiTeksti">
             <p>Huoltopalveluita yksityisille asiakkaille, kiinteistöille, taloyhtiöille, vakuutusyhtiöille ja
@@ -106,9 +108,7 @@
             <img src="../resources/LVI_urakointi_icon.png" alt="urakointi">
         </div>
         <div class="korttiHeader">
-            <a href="">
-                <h3>Urakointi</h3>
-            </a>
+            <h3>Urakointi</h3>
         </div>
         <div class="korttiTeksti">
             <p>Kaikki urakointiin liittyvät palvelut, saneeraukset ja peruskorjaukset</p>
@@ -119,9 +119,8 @@
             <img src="../resources/Tarvikemyynti_icon.png" alt="Tarvikemyynti">
         </div>
         <div class="korttiHeader">
-            <a href="">
-                <h3>Tarvikemyynti</h3>
-            </a>
+            <h3>Tarvikemyynti</h3>
+
         </div>
         <div class="korttiTeksti">
             <p>Tarvikevarastossamme on laaja valikoima tarvikkeitta kaikenlaisiin tarpeisiin </p>
@@ -132,9 +131,7 @@
             <img src="../resources/Koteusvauriot_icon-1.png" alt="Kosteusvauriot">
         </div>
         <div class="korttiHeader">
-            <a href="">
-                <h3>Kuivaustyöt</h3>
-            </a>
+            <h3>Kuivaustyöt</h3>
         </div>
         <div class="korttiTeksti">
             <p>Kosteusvauriot ja niiden kartoitus palvelut. Hinta-arviot samana päivänä</p>
