@@ -19,6 +19,12 @@ document.addEventListener('DOMContentLoaded', () => {
             window.location.href = 'huoltotyot.html';
         });
     }
+    const h1Button = document.querySelector('#h1Button');
+    if (h1Button) {
+        h1Button.addEventListener('click', () => {
+           window.location.href = 'etusivu.html'
+        });
+    }
 
     document.getElementById('hamburgerMenu').addEventListener('click', function(event) {
         event.stopPropagation();
