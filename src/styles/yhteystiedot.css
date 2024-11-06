@@ -1,0 +1,56 @@
+.tiedotMain{
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.kontaktiTiedot {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+}
+.map{
+    width: 47%;
+    border: 2px solid #0075A8;
+    margin-top: 20px;
+
+}
+.columnContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.leftColumn, .rightColumn {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .columnContainer {
+        flex-direction: column;
+        width: 100%;
+    }
+    .leftColumn, .rightColumn {
+        width: 100%;
+    }
+    .tiedotMain {
+        padding: 10px; /* Decrease padding */
+    }
+    .kontaktiTiedot{
+        width: 100%;
+    }
+    .kontaktiTiedot, .leftColumn, .rightColumn {
+        font-size: 1.1em;
+    }
+    .map{
+        width: 100%;
+        height: 600px;
+    }
+}
+
+

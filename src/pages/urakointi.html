@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LVIPutkiratkaisut</title>
+    <title>LVIPutkiratkaisut/Urakointi</title>
     <link rel="stylesheet" href="../styles/etusivu.css">
     <link rel="stylesheet" href="../styles/yritys.css">
+    <link rel="stylesheet" href="../styles/urakointi.css">
     <script src="../js/buttons.js" defer></script>
+    <script src="../js/urakointi.js" defer></script>
 </head>
 <body>
 <header class="navBar">
@@ -59,83 +61,58 @@
         </nav>
     </div>
 </header>
-
 <section class="karuselliContainer">
     <div class="karuselliImageContainer">
-        <img src="../resources/putkariKuva1.jpg" alt="putkimies">
+        <img src="../resources/ventilation-work-2-scaled-e1623164587161.jpg" alt="putkimies">
         <div class="overlayElement">
-            <h1>Putkiratkaisut, joihin voit luottaa</h1>
+            <h1>Urakointi palvelut</h1>
         </div>
     </div>
 </section>
+<div class="urakointiMainContainer">
+    <div class="urakointiMainContent">
+        <div class="urakointiHeader">
+            <h3>Ratkaisut LVI-tarpeesta riippumatta!</h3>
+        </div>
+        <div class="urakointiDetails">
+            <p>Meiltä löytyvät ratkaisut erikokoisiin linjasaneerauksiin, vesijohtosaneerauksiin ja uudiskohteisiin.
+                Toteutamme myös toimitilasaneerauksia. Työt hoitavat aina alan ammattilaiset huolella ja tehokkaasti
+                tarkkaa aikataulua noudattaen.
+            </p>
+            <button id="urakointiTarjousBtn">
+                Pyydä Tarjous!
+            </button>
+        </div>
+    </div>
+    <div id="contactModal" class="modal">
+        <div class="modalContent">
+            <span class="closeBtn">&times;</span>
+            <h2>Yhteydenottolomake</h2>
+            <form id="contactForm">
+                <div class="formGroup">
+                    <label for="contactName">Nimi:</label>
+                    <input type="text" id="contactName" name="contactName" required>
+                </div>
+                <div class="formGroup">
+                    <label for="contactEmail">Sähköposti:</label>
+                    <input type="email" id="contactEmail" name="contactEmail" required>
+                </div>
+                <div class="formGroup">
+                    <label for="contactPhone">Puhelinnumero:</label>
+                    <input type="text" id="contactPhone" name="contactPhone" required>
+                </div>
+                <div class="formGroup">
+                    <label for="contactMessage">Lisätiedot:</label>
+                    <textarea id="contactMessage" name="contactMessage" rows="4" required></textarea>
+                </div>
+                <div class="formGroup">
+                    <button type="submit">Lähetä</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 
-<section class="firmaInfoContainer">
-    <div class="firmaInfo">
-        <h2>Luottamus syntyy onnistumisista - LVI - alalla jo vuodesta 1958</h2>
-        <p>LVIPutkiratkaisut on kokenut LVI-urakoinnin asiantuntija, joka tarjoaa kattavan valikoiman palveluita, kuten
-            LVI-urakointi, huolto- ja 24h päivystystyöt, jäähdytyslaite- ja kaukolämpötyöt, tarvikemyynti,
-            kaupunkikaasuasennukset, kosteuskartoitukset ja kuivauspalvelut.</p>
-        <p>Tavoitteemme on ylittää asiakkaidemme odotukset tarjoamalla laadukkaita ja kustannustehokkaita LVI-ratkaisuja
-            kaikkiin tarpeisiin. Panostamme asiantuntemukseen, luotettavuuteen ja ajanmukaisiin työmenetelmiin
-            varmistaaksemme kestävän ja turvallisen lopputuloksen jokaisessa projektissa. Meille on tärkeää suorittaa
-            työ kerralla oikein ja olla asiakkaillemme pitkäaikainen, luotettava kumppani kaikissa LVI-tarpeissa.</p>
-        <p>Vuonna 2011 LVIPutkiratkaisut sai tunnustuksen alansa huippuosaamisesta, kun yritykselle myönnettiin <b><i>Vuoden
-            Innovatiivinen LVI-toimija</i></b> -palkinto. Palkinto myönnettiin erityisesti innovatiivisten ratkaisujen
-            ja
-            asiakaslähtöisen palvelun kehittämisestä, jotka ovat nostaneet yrityksen merkittäväksi toimijaksi
-            LVI-alalla.</p>
-        <p>LVIPutkiratkaisut tarjoavat palveluitaan koko Uudenmaan alueella.</p>
-    </div>
-</section>
-
-<section class="palvelutContainer">
-    <div class="palveluKortti" id="huoltoKortti">
-        <div class="korttiIcon">
-            <img src="../resources/LV_huoltotyot.png" alt="Huoltotyöt">
-        </div>
-        <div class="korttiHeader">
-            <h3>Huoltotyöt</h3>
-        </div>
-        <div class="korttiTeksti">
-            <p>Huoltopalveluita yksityisille asiakkaille, kiinteistöille, taloyhtiöille, vakuutusyhtiöille ja
-                rakennusyrityksille</p>
-        </div>
-    </div>
-    <div class="palveluKortti" id="urakointiKortti">
-        <div class="korttiIcon">
-            <img src="../resources/LVI_urakointi_icon.png" alt="urakointi">
-        </div>
-        <div class="korttiHeader">
-            <h3>Urakointi</h3>
-        </div>
-        <div class="korttiTeksti">
-            <p>Kaikki urakointiin liittyvät palvelut, saneeraukset ja peruskorjaukset</p>
-        </div>
-    </div>
-    <div class="palveluKortti" id="tarvikeMyyntiBtn">
-        <div class="korttiIcon">
-            <img src="../resources/Tarvikemyynti_icon.png" alt="Tarvikemyynti">
-        </div>
-        <div class="korttiHeader">
-            <h3>Tarvikemyynti</h3>
-
-        </div>
-        <div class="korttiTeksti">
-            <p>Tarvikevarastossamme on laaja valikoima tarvikkeitta kaikenlaisiin tarpeisiin </p>
-        </div>
-    </div>
-    <div class="palveluKortti" id="kosteusvauriotBtn">
-        <div class="korttiIcon">
-            <img src="../resources/Koteusvauriot_icon-1.png" alt="Kosteusvauriot">
-        </div>
-        <div class="korttiHeader">
-            <h3>Kuivaustyöt</h3>
-        </div>
-        <div class="korttiTeksti">
-            <p>Kosteusvauriot ja niiden kartoitus palvelut. Hinta-arviot samana päivänä</p>
-        </div>
-    </div>
-</section>
 <footer class="footer">
     <div class="footerMain">
         <div class="footerHeader">

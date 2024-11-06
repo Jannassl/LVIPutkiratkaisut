@@ -19,6 +19,37 @@ document.addEventListener('DOMContentLoaded', () => {
             window.location.href = 'huoltotyot.html';
         });
     }
+    const urakointiKorttiBtn = document.querySelector('#urakointiKortti');
+    if(urakointiKorttiBtn){
+        urakointiKorttiBtn.addEventListener('click', () => {
+            window.location.href ='urakointi.html'
+        });
+    }
+    const tyopaikatBtn= document.querySelector('#tyopaikatBtn');
+    if(tyopaikatBtn) {
+        tyopaikatBtn.addEventListener('click', () => {
+            window.location.href= 'tyopaikat.html'
+        });
+    }
+    const tarvikeMyyntiBtn= document.querySelector('#tarvikeMyyntiBtn');
+    if (tarvikeMyyntiBtn){
+        tarvikeMyyntiBtn.addEventListener('click', () => {
+            window.location.href = 'tarvikemyynti.html'
+        });
+    }
+    const kosteusvauriotBtn = document.querySelector('#kosteusvauriotBtn');
+    if (kosteusvauriotBtn) {
+        kosteusvauriotBtn.addEventListener('click',() => {
+            window.location.href = 'kuivaustyot.html'
+        });
+    }
+    const yhteystiedotBtn = document.querySelector('#yhteystiedotBtn');
+    if (yhteystiedotBtn) {
+        yhteystiedotBtn.addEventListener('click', () => {
+            window.location.href = "yhteystiedot.html"
+        });
+    }
+
     const h1Button = document.querySelector('#h1Button');
     if (h1Button) {
         h1Button.addEventListener('click', () => {

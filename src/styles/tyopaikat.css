@@ -1,0 +1,82 @@
+.formContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center vertically */
+    background: whitesmoke;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-height: 100vh; /* Ensure the container takes the full height of the viewport */
+}
+
+.formContent {
+    width: 80%;
+    max-width: 600px; /* Limit the maximum width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formElements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.formElements h3 {
+    align-self: flex-start;
+    margin-bottom: 1rem;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.formGroup input,
+.formGroup textarea,
+.formGroup button {
+    width: 100%;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    flex-shrink: inherit;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.formGroup button {
+    background-color: #0075A8;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formGroup button:hover {
+    background-color: #0056b3;
+}
+
+.formLabel {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
